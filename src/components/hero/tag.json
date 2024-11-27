@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_hero_tags",
+  "info": {
+    "displayName": "tag",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

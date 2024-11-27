@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_hero_hero_sections",
+  "info": {
+    "displayName": "heroSection",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "tag": {
+      "displayName": "tag",
+      "type": "component",
+      "repeatable": true,
+      "component": "hero.tag"
+    }
+  }
+}
