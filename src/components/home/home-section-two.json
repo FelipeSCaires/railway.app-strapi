@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_home_section_twos",
+  "info": {
+    "displayName": "homeSectionTwo",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "item": {
+      "displayName": "item",
+      "type": "component",
+      "repeatable": true,
+      "component": "home.item"
+    }
+  }
+}

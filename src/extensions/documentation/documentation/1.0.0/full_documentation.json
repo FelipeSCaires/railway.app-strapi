@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-11-27T14:40:05.377Z"
+    "x-generation-date": "2024-11-27T19:57:27.000Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -2011,6 +2011,18 @@
                   "$ref": "#/components/schemas/HeroHeroSectionComponent"
                 }
               },
+              "SectionOne": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/HomeHomeSectionOneComponent"
+                }
+              },
+              "sectionTow": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/HomeHomeSectionTwoComponent"
+                }
+              },
               "locale": {
                 "type": "string"
               },
@@ -2082,6 +2094,18 @@
               "$ref": "#/components/schemas/HeroHeroSectionComponent"
             }
           },
+          "SectionOne": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HomeHomeSectionOneComponent"
+            }
+          },
+          "sectionTow": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HomeHomeSectionTwoComponent"
+            }
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -2134,6 +2158,18 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/HeroHeroSectionComponent"
+                  }
+                },
+                "SectionOne": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HomeHomeSectionOneComponent"
+                  }
+                },
+                "sectionTow": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HomeHomeSectionTwoComponent"
                   }
                 },
                 "createdAt": {
@@ -2354,6 +2390,54 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/HeroTagComponent"
+            }
+          }
+        }
+      },
+      "HomeHomeSectionOneComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "HomeItemComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "HomeHomeSectionTwoComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "item": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HomeItemComponent"
             }
           }
         }

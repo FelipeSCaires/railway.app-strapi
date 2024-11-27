@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "home"
+    "displayName": "home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,18 @@
       "type": "component",
       "repeatable": true,
       "component": "hero.hero-section"
+    },
+    "SectionOne": {
+      "displayName": "homeSectionOne",
+      "type": "component",
+      "repeatable": true,
+      "component": "home.home-section-one"
+    },
+    "sectionTow": {
+      "displayName": "homeSectionTwo",
+      "type": "component",
+      "repeatable": true,
+      "component": "home.home-section-two"
     }
   }
 }

@@ -1,5 +1,42 @@
 import type { Struct, Schema } from '@strapi/strapi';
 
+export interface HomeItem extends Struct.ComponentSchema {
+  collectionName: 'components_home_items';
+  info: {
+    displayName: 'item';
+    icon: 'alien';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+  };
+}
+
+export interface HomeHomeSectionTwo extends Struct.ComponentSchema {
+  collectionName: 'components_home_home_section_twos';
+  info: {
+    displayName: 'homeSectionTwo';
+    icon: 'alien';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    item: Schema.Attribute.Component<'home.item', true>;
+  };
+}
+
+export interface HomeHomeSectionOne extends Struct.ComponentSchema {
+  collectionName: 'components_home_home_section_ones';
+  info: {
+    displayName: 'homeSectionOne';
+    icon: 'alien';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+  };
+}
+
 export interface HeroTag extends Struct.ComponentSchema {
   collectionName: 'components_hero_tags';
   info: {
@@ -27,6 +64,9 @@ export interface HeroHeroSection extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'home.item': HomeItem;
+      'home.home-section-two': HomeHomeSectionTwo;
+      'home.home-section-one': HomeHomeSectionOne;
       'hero.tag': HeroTag;
       'hero.hero-section': HeroHeroSection;
     }

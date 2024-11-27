@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_home_items",
+  "info": {
+    "displayName": "item",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

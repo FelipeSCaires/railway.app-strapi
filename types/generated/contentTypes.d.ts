@@ -6,12 +6,15 @@ export interface ApiHomeHome extends Struct.CollectionTypeSchema {
     singularName: 'home';
     pluralName: 'homes';
     displayName: 'home';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     homeHero: Schema.Attribute.Component<'hero.hero-section', true>;
+    SectionOne: Schema.Attribute.Component<'home.home-section-one', true>;
+    sectionTow: Schema.Attribute.Component<'home.home-section-two', true>;
     createdAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
