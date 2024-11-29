@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-11-29T20:36:16.514Z"
+    "x-generation-date": "2024-11-29T23:42:44.363Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4499,6 +4499,20 @@
           }
         }
       },
+      "ServicoItemComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
       "ContatoSectionTwoComponent": {
         "type": "object",
         "properties": {
@@ -4511,7 +4525,15 @@
           "description": {
             "type": "string"
           },
-          "map": {}
+          "item": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ServicoItemComponent"
+            }
+          },
+          "whatsappMessage": {
+            "type": "string"
+          }
         }
       },
       "HomeRequest": {
@@ -6421,20 +6443,6 @@
             }
           },
           "title": {}
-        }
-      },
-      "ServicoItemComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "number"
-          },
-          "title": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          }
         }
       },
       "PrimeSectionTwoComponent": {

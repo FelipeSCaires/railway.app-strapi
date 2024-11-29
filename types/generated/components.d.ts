@@ -310,12 +310,12 @@ export interface ContatoSectionTwo extends Struct.ComponentSchema {
   info: {
     displayName: 'SectionTwo';
     icon: 'alien';
-    description: '';
   };
   attributes: {
     title: Schema.Attribute.String;
     description: Schema.Attribute.String;
-    map: Schema.Attribute.Blocks;
+    item: Schema.Attribute.Component<'servico.item', true>;
+    whatsappMessage: Schema.Attribute.String;
   };
 }
 
