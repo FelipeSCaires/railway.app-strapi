@@ -305,6 +305,34 @@ export interface HeroHeroSection extends Struct.ComponentSchema {
   };
 }
 
+export interface ContatoSectionTwo extends Struct.ComponentSchema {
+  collectionName: 'components_contato_section_twos';
+  info: {
+    displayName: 'SectionTwo';
+    icon: 'alien';
+    description: '';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    map: Schema.Attribute.Blocks;
+  };
+}
+
+export interface ContatoSectionOne extends Struct.ComponentSchema {
+  collectionName: 'components_contato_section_ones';
+  info: {
+    displayName: 'SectionOne';
+    icon: 'alien';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    description: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    whatsapp: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -331,6 +359,8 @@ declare module '@strapi/strapi' {
       'home.home-section-one': HomeHomeSectionOne;
       'hero.tag': HeroTag;
       'hero.hero-section': HeroHeroSection;
+      'contato.section-two': ContatoSectionTwo;
+      'contato.section-one': ContatoSectionOne;
     }
   }
 }

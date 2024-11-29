@@ -495,6 +495,36 @@ export interface PluginUsersPermissionsUser
   };
 }
 
+export interface ApiContatoContato extends Struct.CollectionTypeSchema {
+  collectionName: 'contatoes';
+  info: {
+    singularName: 'contato';
+    pluralName: 'contatoes';
+    displayName: 'contato';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    SectionOne: Schema.Attribute.Component<'contato.section-one', false>;
+    SectionTwo: Schema.Attribute.Component<'contato.section-two', false>;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contato.contato'
+    > &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Struct.CollectionTypeSchema {
   collectionName: 'homes';
   info: {
@@ -1014,6 +1044,7 @@ declare module '@strapi/strapi' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::contato.contato': ApiContatoContato;
       'api::home.home': ApiHomeHome;
       'api::nosso-proposito.nosso-proposito': ApiNossoPropositoNossoProposito;
       'api::prime.prime': ApiPrimePrime;

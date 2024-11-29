@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contatoes",
+  "info": {
+    "singularName": "contato",
+    "pluralName": "contatoes",
+    "displayName": "contato",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SectionOne": {
+      "displayName": "SectionOne",
+      "type": "component",
+      "repeatable": false,
+      "component": "contato.section-one"
+    },
+    "SectionTwo": {
+      "displayName": "SectionTwo",
+      "type": "component",
+      "repeatable": false,
+      "component": "contato.section-two"
+    }
+  }
+}
