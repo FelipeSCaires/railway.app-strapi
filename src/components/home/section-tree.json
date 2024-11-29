@@ -2,7 +2,8 @@
   "collectionName": "components_home_section_trees",
   "info": {
     "displayName": "SectionTree",
-    "icon": "alien"
+    "icon": "alien",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,17 +17,20 @@
       "type": "string"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": true,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "item": {
       "type": "component",
       "repeatable": true,
       "component": "home.item"
+    },
+    "whatsappMessage": {
+      "type": "string"
     }
   }
 }

@@ -13,8 +13,13 @@
     "description": {
       "type": "string"
     },
-    "map": {
-      "type": "blocks"
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "servico.item"
+    },
+    "address": {
+      "type": "string"
     }
   }
 }

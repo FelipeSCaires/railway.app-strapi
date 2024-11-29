@@ -217,6 +217,7 @@ export interface HomeSectionTree extends Struct.ComponentSchema {
   info: {
     displayName: 'SectionTree';
     icon: 'alien';
+    description: '';
   };
   attributes: {
     tag: Schema.Attribute.String;
@@ -224,6 +225,7 @@ export interface HomeSectionTree extends Struct.ComponentSchema {
     description: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images', true> & Schema.Attribute.Required;
     item: Schema.Attribute.Component<'home.item', true>;
+    whatsappMessage: Schema.Attribute.String;
   };
 }
 
@@ -297,11 +299,13 @@ export interface HeroHeroSection extends Struct.ComponentSchema {
   info: {
     displayName: 'heroSection';
     icon: 'alien';
+    description: '';
   };
   attributes: {
     title: Schema.Attribute.Blocks;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     tag: Schema.Attribute.Component<'hero.tag', true>;
+    whatsappMessage: Schema.Attribute.String;
   };
 }
 
@@ -315,7 +319,8 @@ export interface ContatoSectionTwo extends Struct.ComponentSchema {
   attributes: {
     title: Schema.Attribute.String;
     description: Schema.Attribute.String;
-    map: Schema.Attribute.Blocks;
+    item: Schema.Attribute.Component<'servico.item', true>;
+    address: Schema.Attribute.String;
   };
 }
 

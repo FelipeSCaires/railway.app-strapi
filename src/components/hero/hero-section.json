@@ -2,7 +2,8 @@
   "collectionName": "components_hero_hero_sections",
   "info": {
     "displayName": "heroSection",
-    "icon": "alien"
+    "icon": "alien",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,18 +11,21 @@
       "type": "blocks"
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "tag": {
       "displayName": "tag",
       "type": "component",
       "repeatable": true,
       "component": "hero.tag"
+    },
+    "whatsappMessage": {
+      "type": "string"
     }
   }
 }
