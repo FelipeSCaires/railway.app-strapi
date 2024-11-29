@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_home_items",
+  "collectionName": "components_servico_items",
   "info": {
     "displayName": "item",
-    "icon": "alien",
-    "description": ""
+    "icon": "alien"
   },
   "options": {},
   "attributes": {

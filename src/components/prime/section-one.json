@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_prime_section_ones",
+  "info": {
+    "displayName": "SectionOne",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "title": {
+      "type": "blocks"
+    }
+  }
+}

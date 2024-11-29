@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_home_home_section_twos",
+  "collectionName": "components_nosso_proposito_section_trees",
   "info": {
-    "displayName": "homeSectionTwo",
+    "displayName": "SectionTree",
     "icon": "alien",
     "description": ""
   },
@@ -14,10 +14,10 @@
       "type": "string"
     },
     "item": {
-      "displayName": "item",
+      "displayName": "paragraph",
       "type": "component",
       "repeatable": true,
-      "component": "home.item"
+      "component": "nosso-proposito.paragraph"
     }
   }
 }

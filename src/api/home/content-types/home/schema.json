@@ -24,11 +24,27 @@
       "repeatable": true,
       "component": "home.home-section-one"
     },
-    "sectionTow": {
+    "SectionTwo": {
       "displayName": "homeSectionTwo",
       "type": "component",
       "repeatable": true,
       "component": "home.home-section-two"
+    },
+    "HomeSectionTree": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.section-tree"
+    },
+    "SectionFour": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.item"
+    },
+    "SectionFive": {
+      "displayName": "SectionFive",
+      "type": "component",
+      "repeatable": true,
+      "component": "home.section-five"
     }
   }
 }

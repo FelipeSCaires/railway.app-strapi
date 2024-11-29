@@ -1,33 +1,5 @@
 import type { Struct, Schema } from '@strapi/strapi';
 
-export interface ApiHomeHome extends Struct.CollectionTypeSchema {
-  collectionName: 'homes';
-  info: {
-    singularName: 'home';
-    pluralName: 'homes';
-    displayName: 'home';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    homeHero: Schema.Attribute.Component<'hero.hero-section', true>;
-    SectionOne: Schema.Attribute.Component<'home.home-section-one', true>;
-    sectionTow: Schema.Attribute.Component<'home.home-section-two', true>;
-    createdAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    publishedAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Struct.CollectionTypeSchema {
   collectionName: 'files';
   info: {
@@ -523,6 +495,143 @@ export interface PluginUsersPermissionsUser
   };
 }
 
+export interface ApiHomeHome extends Struct.CollectionTypeSchema {
+  collectionName: 'homes';
+  info: {
+    singularName: 'home';
+    pluralName: 'homes';
+    displayName: 'home';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    homeHero: Schema.Attribute.Component<'hero.hero-section', true>;
+    SectionOne: Schema.Attribute.Component<'home.home-section-one', true>;
+    SectionTwo: Schema.Attribute.Component<'home.home-section-two', true>;
+    HomeSectionTree: Schema.Attribute.Component<'home.section-tree', true>;
+    SectionFour: Schema.Attribute.Component<'home.item', true>;
+    SectionFive: Schema.Attribute.Component<'home.section-five', true>;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNossoPropositoNossoProposito
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'nosso_propositos';
+  info: {
+    singularName: 'nosso-proposito';
+    pluralName: 'nosso-propositos';
+    displayName: 'nossoProposito';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    SectionOne: Schema.Attribute.Component<'nosso-proposito.section-one', true>;
+    SectionTwo: Schema.Attribute.Component<
+      'nosso-proposito.section-two',
+      false
+    >;
+    SectionTree: Schema.Attribute.Component<
+      'nosso-proposito.section-tree',
+      true
+    >;
+    SectionFour: Schema.Attribute.Component<
+      'nosso-proposito.section-four',
+      false
+    >;
+    SectionFive: Schema.Attribute.Component<
+      'nosso-proposito.section-five',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::nosso-proposito.nosso-proposito'
+    > &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPrimePrime extends Struct.CollectionTypeSchema {
+  collectionName: 'primes';
+  info: {
+    singularName: 'prime';
+    pluralName: 'primes';
+    displayName: 'Prime';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    SectionOne: Schema.Attribute.Component<'prime.section-one', false>;
+    SectionTwo: Schema.Attribute.Component<'prime.section-two', false>;
+    SectionTree: Schema.Attribute.Component<'prime.section-tree', false>;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::prime.prime'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiServicoServico extends Struct.CollectionTypeSchema {
+  collectionName: 'servicos';
+  info: {
+    singularName: 'servico';
+    pluralName: 'servicos';
+    displayName: 'Servico';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    SectionOne: Schema.Attribute.Component<'servico.section-one', false>;
+    SectionTwo: Schema.Attribute.Component<'servico.section-two', false>;
+    SectionTree: Schema.Attribute.Component<'servico.section-tree', true>;
+    SectionFour: Schema.Attribute.Component<'home.section-tree', true>;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::servico.servico'
+    > &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface AdminPermission extends Struct.CollectionTypeSchema {
   collectionName: 'admin_permissions';
   info: {
@@ -895,7 +1004,6 @@ export interface AdminTransferTokenPermission
 declare module '@strapi/strapi' {
   export module Public {
     export interface ContentTypeSchemas {
-      'api::home.home': ApiHomeHome;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::i18n.locale': PluginI18NLocale;
@@ -906,6 +1014,10 @@ declare module '@strapi/strapi' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::home.home': ApiHomeHome;
+      'api::nosso-proposito.nosso-proposito': ApiNossoPropositoNossoProposito;
+      'api::prime.prime': ApiPrimePrime;
+      'api::servico.servico': ApiServicoServico;
       'admin::permission': AdminPermission;
       'admin::user': AdminUser;
       'admin::role': AdminRole;

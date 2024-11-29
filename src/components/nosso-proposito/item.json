@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_nosso_proposito_items",
+  "info": {
+    "displayName": "item",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "info": {
+      "type": "string"
+    }
+  }
+}

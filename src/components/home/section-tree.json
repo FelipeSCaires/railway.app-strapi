@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_section_trees",
+  "info": {
+    "displayName": "SectionTree",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.item"
+    }
+  }
+}

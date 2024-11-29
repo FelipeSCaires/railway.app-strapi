@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_nosso_proposito_descriptions",
+  "info": {
+    "displayName": "description",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

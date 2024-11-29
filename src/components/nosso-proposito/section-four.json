@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_home_home_section_twos",
+  "collectionName": "components_nosso_proposito_section_fours",
   "info": {
-    "displayName": "homeSectionTwo",
-    "icon": "alien",
-    "description": ""
+    "displayName": "SectionFour",
+    "icon": "alien"
   },
   "options": {},
   "attributes": {
@@ -17,7 +16,7 @@
       "displayName": "item",
       "type": "component",
       "repeatable": true,
-      "component": "home.item"
+      "component": "nosso-proposito.item"
     }
   }
 }

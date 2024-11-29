@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_nosso_proposito_section_twos",
+  "info": {
+    "displayName": "SectionTwo",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "displayName": "description",
+      "type": "component",
+      "repeatable": true,
+      "component": "nosso-proposito.description"
+    }
+  }
+}

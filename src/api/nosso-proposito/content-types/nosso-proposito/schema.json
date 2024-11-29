@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nosso_propositos",
+  "info": {
+    "singularName": "nosso-proposito",
+    "pluralName": "nosso-propositos",
+    "displayName": "nossoProposito",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SectionOne": {
+      "displayName": "SectionOne",
+      "type": "component",
+      "repeatable": true,
+      "component": "nosso-proposito.section-one"
+    },
+    "SectionTwo": {
+      "displayName": "SectionTwo",
+      "type": "component",
+      "repeatable": false,
+      "component": "nosso-proposito.section-two"
+    },
+    "SectionTree": {
+      "displayName": "SectionTree",
+      "type": "component",
+      "repeatable": true,
+      "component": "nosso-proposito.section-tree"
+    },
+    "SectionFour": {
+      "displayName": "SectionFour",
+      "type": "component",
+      "repeatable": false,
+      "component": "nosso-proposito.section-four"
+    },
+    "SectionFive": {
+      "displayName": "SectionFive",
+      "type": "component",
+      "repeatable": false,
+      "component": "nosso-proposito.section-five"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_home_home_section_twos",
+  "collectionName": "components_servico_section_twos",
   "info": {
-    "displayName": "homeSectionTwo",
+    "displayName": "SectionTwo",
     "icon": "alien",
     "description": ""
   },
@@ -13,11 +13,11 @@
     "description": {
       "type": "string"
     },
-    "item": {
-      "displayName": "item",
+    "card": {
+      "displayName": "card",
       "type": "component",
       "repeatable": true,
-      "component": "home.item"
+      "component": "servico.card"
     }
   }
 }

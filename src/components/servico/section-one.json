@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_servico_section_ones",
+  "info": {
+    "displayName": "SectionOne",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "description": {
+      "type": "string"
+    },
+    "item": {
+      "displayName": "item",
+      "type": "component",
+      "repeatable": true,
+      "component": "servico.item"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

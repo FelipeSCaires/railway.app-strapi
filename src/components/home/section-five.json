@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_section_fives",
+  "info": {
+    "displayName": "SectionFive",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    }
+  }
+}

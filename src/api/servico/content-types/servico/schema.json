@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "servicos",
+  "info": {
+    "singularName": "servico",
+    "pluralName": "servicos",
+    "displayName": "Servico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SectionOne": {
+      "displayName": "SectionOne",
+      "type": "component",
+      "repeatable": false,
+      "component": "servico.section-one"
+    },
+    "SectionTwo": {
+      "displayName": "SectionTwo",
+      "type": "component",
+      "repeatable": false,
+      "component": "servico.section-two"
+    },
+    "SectionTree": {
+      "displayName": "SectionTree",
+      "type": "component",
+      "repeatable": true,
+      "component": "servico.section-tree"
+    },
+    "SectionFour": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.section-tree"
+    }
+  }
+}

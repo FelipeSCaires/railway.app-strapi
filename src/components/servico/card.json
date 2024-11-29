@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_home_home_section_twos",
+  "collectionName": "components_servico_cards",
   "info": {
-    "displayName": "homeSectionTwo",
-    "icon": "alien",
-    "description": ""
+    "displayName": "card",
+    "icon": "alien"
   },
   "options": {},
   "attributes": {
@@ -14,10 +13,9 @@
       "type": "string"
     },
     "item": {
-      "displayName": "item",
       "type": "component",
       "repeatable": true,
-      "component": "home.item"
+      "component": "servico.item"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "primes",
+  "info": {
+    "singularName": "prime",
+    "pluralName": "primes",
+    "displayName": "Prime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SectionOne": {
+      "displayName": "SectionOne",
+      "type": "component",
+      "repeatable": false,
+      "component": "prime.section-one"
+    },
+    "SectionTwo": {
+      "displayName": "SectionTwo",
+      "type": "component",
+      "repeatable": false,
+      "component": "prime.section-two"
+    },
+    "SectionTree": {
+      "displayName": "SectionTree",
+      "type": "component",
+      "repeatable": false,
+      "component": "prime.section-tree"
+    }
+  }
+}

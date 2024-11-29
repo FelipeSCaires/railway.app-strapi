@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_home_home_section_twos",
+  "collectionName": "components_nosso_proposito_section_fives",
   "info": {
-    "displayName": "homeSectionTwo",
+    "displayName": "SectionFive",
     "icon": "alien",
     "description": ""
   },
@@ -10,11 +10,15 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "item": {
-      "displayName": "item",
       "type": "component",
       "repeatable": true,
       "component": "home.item"
