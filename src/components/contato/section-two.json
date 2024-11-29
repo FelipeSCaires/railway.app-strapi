@@ -2,8 +2,7 @@
   "collectionName": "components_contato_section_twos",
   "info": {
     "displayName": "SectionTwo",
-    "icon": "alien",
-    "description": ""
+    "icon": "alien"
   },
   "options": {},
   "attributes": {
@@ -13,8 +12,13 @@
     "description": {
       "type": "string"
     },
-    "map": {
-      "type": "blocks"
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "servico.item"
+    },
+    "whatsappMessage": {
+      "type": "string"
     }
   }
 }
