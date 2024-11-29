@@ -7,6 +7,7 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
+          'frame-ancestors': ['*'],
           'connect-src': ["'self'", 'https:'],
           'img-src': ["'self'", 'data:', 'blob:', 'market-assets.strapi.io', 'res.cloudinary.com'],
           'media-src': [
