@@ -240,7 +240,7 @@ export interface HomeSectionFive extends Struct.ComponentSchema {
     title: Schema.Attribute.Blocks;
     description: Schema.Attribute.Blocks;
     image: Schema.Attribute.Media<'images' | 'videos'> &
-    Schema.Attribute.Required;
+      Schema.Attribute.Required;
   };
 }
 
@@ -314,12 +314,14 @@ export interface ContatoSectionTwo extends Struct.ComponentSchema {
   info: {
     displayName: 'SectionTwo';
     icon: 'alien';
+    description: '';
   };
   attributes: {
     title: Schema.Attribute.String;
     description: Schema.Attribute.String;
     item: Schema.Attribute.Component<'servico.item', true>;
     address: Schema.Attribute.String;
+    map: Schema.Attribute.JSON;
   };
 }
 
