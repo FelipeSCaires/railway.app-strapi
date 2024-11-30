@@ -2,7 +2,8 @@
   "collectionName": "components_contato_section_twos",
   "info": {
     "displayName": "SectionTwo",
-    "icon": "alien"
+    "icon": "alien",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -19,6 +20,9 @@
     },
     "address": {
       "type": "string"
+    },
+    "map": {
+      "type": "json"
     }
   }
 }
