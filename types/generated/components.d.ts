@@ -321,7 +321,7 @@ export interface ContatoSectionTwo extends Struct.ComponentSchema {
     description: Schema.Attribute.String;
     item: Schema.Attribute.Component<'servico.item', true>;
     address: Schema.Attribute.String;
-    map: Schema.Attribute.JSON;
+    map: Schema.Attribute.Blocks;
   };
 }
 
