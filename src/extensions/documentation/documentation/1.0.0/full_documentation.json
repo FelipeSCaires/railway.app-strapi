@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-11-29T23:42:44.363Z"
+    "x-generation-date": "2024-11-30T13:37:45.825Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -4531,7 +4531,7 @@
               "$ref": "#/components/schemas/ServicoItemComponent"
             }
           },
-          "whatsappMessage": {
+          "address": {
             "type": "string"
           }
         }
@@ -4985,6 +4985,9 @@
             "items": {
               "$ref": "#/components/schemas/HeroTagComponent"
             }
+          },
+          "whatsappMessage": {
+            "type": "string"
           }
         }
       },
@@ -5188,6 +5191,9 @@
             "items": {
               "$ref": "#/components/schemas/HomeItemComponent"
             }
+          },
+          "whatsappMessage": {
+            "type": "string"
           }
         }
       },

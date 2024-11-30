@@ -17,7 +17,7 @@
       "repeatable": true,
       "component": "servico.item"
     },
-    "whatsappMessage": {
+    "address": {
       "type": "string"
     }
   }
