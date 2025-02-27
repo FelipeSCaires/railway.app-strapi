@@ -241,6 +241,7 @@ export interface HomeSectionFive extends Struct.ComponentSchema {
     description: Schema.Attribute.Blocks;
     image: Schema.Attribute.Media<'images' | 'videos'> &
       Schema.Attribute.Required;
+    url: Schema.Attribute.String;
   };
 }
 
